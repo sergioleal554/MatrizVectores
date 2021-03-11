@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package metodos;
 
 import javax.swing.JOptionPane;
@@ -93,8 +89,7 @@ public class mVentas {
         return pos;
     }
     
-    //Este método dada la posición de un vendedor
-    //determina su total de ventas.
+   
     public double getVentasVendedor(int posV){
         double suma=0;
         int j;
@@ -104,8 +99,7 @@ public class mVentas {
         return suma;
     }
     
-    //Este método dada la posición de un mes
-    //determina su total de ventas.
+  
     public double getVentasMes(int posM){
         double suma=0;
         int i;
@@ -115,8 +109,7 @@ public class mVentas {
         return suma;
     }
     
-    //Este metodo determina las ventas anuales de
-    //todos los vendedores.
+   
     public double[] getVentasXVendedor( ){
         double vVendedores[]=new double[nv];
         int i;
@@ -126,8 +119,7 @@ public class mVentas {
         return vVendedores;
     }
     
-    //Este metodo determina las ventas de todos los 
-    //vendedores por mes.
+   
     public double[] getVentasXMes( ){
         double vMes[]=new double[nm];
         int j;
@@ -181,7 +173,7 @@ public class mVentas {
         JOptionPane.showMessageDialog(null, info);
     }
     
-    //Ventas de un vendedor
+    
     public void getVentasdeUNVendedor(int v){
         double vVendedor[]=new double[nm];
         int j;
@@ -191,7 +183,7 @@ public class mVentas {
         getMostrarVec(vVendedor);
     }
     
-    //Ventas de un mes
+    
     public void getVentasdeUNMes(int m){
         double vMes[]=new double[nv];
         int i;
