@@ -1,21 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package metodos;
 
-import javax.swing.JOptionPane;
-
-/**
- *
- * @author Ruben
- */
-public class NewJFrame extends javax.swing.JFrame {
-
-    /**
-     * Creates new form NewJFrame
-     */
+import javax.swing.JOptionspane;
+public class NewJFrame extends javax.swing.JFrame;
     public NewJFrame() {
         initComponents();
         // Image ico = Toolkit.getDefaultToolkit().getImagen(ClassLoader.getSystemResource("img/ico.png"));
