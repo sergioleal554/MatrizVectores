@@ -3,8 +3,6 @@
 package metodos;
 
 import javax.swing.JOptionPane;
-
-
 public class probador {
             
     public static void main(String args[]){
