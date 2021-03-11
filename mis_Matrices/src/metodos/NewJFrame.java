@@ -78,7 +78,7 @@ public class NewJFrame extends javax.swing.JFrame {
         getContentPane().add(VentaVendedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 140, 35));
 
         MesVenta.setFont(new java.awt.Font("Arial Black", 0, 8)); // NOI18N
-        MesVenta.setText("DETERMINAR MEJOR MES DE VENTAS");
+        MesVenta.setText("DETERMINAR CUAL FUE MEJOR MES DE VENTAS");
         MesVenta.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         MesVenta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,7 +88,7 @@ public class NewJFrame extends javax.swing.JFrame {
         getContentPane().add(MesVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 190, 35));
 
         VentaMes.setFont(new java.awt.Font("Arial Black", 0, 8)); // NOI18N
-        VentaMes.setText("VER VENTAS DE UN MES");
+        VentaMes.setText("MOSTRAR VENTAS DE UN MES");
         VentaMes.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         VentaMes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -144,22 +144,22 @@ public class NewJFrame extends javax.swing.JFrame {
             pos = miData.getMejorVendorA();
             JOptionPane.showMessageDialog(null,
                     "El mejor vendedor del año es: " + pos
-                    + ". Sus ventas fueron: " + miData.getVentasVendedor(pos));
+                    + ". Sus ventas fueron de: " + miData.getVentasVendedor(pos));
         }
     }//GEN-LAST:event_VendedorAñoActionPerformed
 
     private void VentaVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VentaVendedorActionPerformed
         if (miData == null) {
             JOptionPane.showMessageDialog(null,
-                    "La matriz no tiene registrado los datos!!");
+                    "La matriz no tiene los datos registrado !!");
         } else {
             vend = Integer.parseInt(JOptionPane.showInputDialog(
-                    "Entre la posición del vendedor a consultar: "));
+                    "Entre a la posición del vendedor a comprobar: "));
             if ((vend >= 0) && (vend < miData.nv)) {
                 miData.getVentasdeUNVendedor(vend);
             } else {
                 JOptionPane.showMessageDialog(null,
-                        "Esta posición del vendedor es invalida!");
+                        "Error posición del vendedor es invalida!");
             }
         }
     }//GEN-LAST:event_VentaVendedorActionPerformed
@@ -167,7 +167,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void VentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VentasActionPerformed
         if (miData == null) {
             JOptionPane.showMessageDialog(null,
-                    "La matriz no tiene registrado los datos!!");
+                    "La matriz no tiene los datos  registrado!!");
         } else {
             miData.getMostrarV();
         }
@@ -185,15 +185,15 @@ public class NewJFrame extends javax.swing.JFrame {
     private void VentaMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VentaMesActionPerformed
         if (miData == null) {
             JOptionPane.showMessageDialog(null,
-                    "La matriz no tiene registrado los datos!!");
+                    "La matriz no tiene los datos registrado!!");
         } else {
             mes = Integer.parseInt(JOptionPane.showInputDialog(
-                    "Entre la posición del mes a consultar: "));
+                    "Entre la posición mensual a consultar: "));
             if ((mes >= 0) && (mes < miData.nm)) {
                 miData.getVentasdeUNMes(mes);
             } else {
                 JOptionPane.showMessageDialog(null,
-                        "Esta posición del mes es invalida!");
+                        "Error posición del mes es invalida!");
             }
         }
     }//GEN-LAST:event_VentaMesActionPerformed
@@ -202,7 +202,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         if (miData == null) {
             JOptionPane.showMessageDialog(null,
-                    "La matriz no tiene registrado los datos!!");
+                    "La matriz no tiene datos registrados!!");
         } else {
             pos = miData.getMejorMesV();
             JOptionPane.showMessageDialog(null,
